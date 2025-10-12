@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Watcher Luxury Premium Watches</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Watcher Luxury - Premium Watches</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -11,33 +12,150 @@
     <nav>
       <a href="#">Home</a>
       <a href="#">Collection</a>
-      <a href="#">About</a>
+      <a href="#">Features</a>
+      <a href="#">Reviews</a>
       <a href="#">Contact</a>
     </nav>
   </header>
   <section class="hero">
     <h1>Experience Time Redefined</h1>
-    <p>Discover premium and ultra-rare luxury watches</p>
+    <p>Discover premium and ultra-rare watches crafted for connoisseurs.<br>Elegance, precision, and exclusivity in every tick.</p>
     <button>See Our Collection</button>
   </section>
-  <section class="highlights">
-    <div class="watch-card">
-      <img src="watch1.jpg" alt="Ultra Rare Edition">
-      <h2>Ultra Rare Edition</h2>
-      <p>Swiss Movement, diamond encrusted.</p>
+
+  <!-- Men's Watch Carousel (Scrolls Right) -->
+  <section class="carousel-section">
+    <h2>Men's Premium Collection</h2>
+    <div class="carousel-outer">
+      <button class="arrow left" onclick="scrollCarousel('menCarousel', -1)">&#8592;</button>
+      <div class="carousel-container" id="menCarousel">
+        <div class="watch-item">
+          <img src="https://images.unsplash.com/photo-1444065381814-865dc9da92c0?w=400&h=400&fit=crop" alt="Executive Gold">
+          <h3>Executive Gold</h3>
+          <p>Gold Plated, Leather Strap, Luxury</p>
+          <button>Buy Now</button>
+        </div>
+        <div class="watch-item">
+          <img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?w=400&h=400&fit=crop" alt="Sport Chronograph">
+          <h3>Sport Chronograph</h3>
+          <p>Carbon Fiber, Water Resistant, Athletic</p>
+          <button>Buy Now</button>
+        </div>
+        <div class="watch-item">
+          <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=400&h=400&fit=crop" alt="Titanium Elite">
+          <h3>Titanium Elite</h3>
+          <p>Titanium Case, Sapphire Glass, Premium</p>
+          <button>Buy Now</button>
+        </div>
+        <div class="watch-item">
+          <img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?w=400&h=400&fit=crop" alt="Blue Diamond">
+          <h3>Blue Diamond</h3>
+          <p>Blue Dial, Diamond Markers, Elegant</p>
+          <button>Buy Now</button>
+        </div>
+        <div class="watch-item">
+          <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&h=400&fit=crop" alt="Military Tactical">
+          <h3>Military Tactical</h3>
+          <p>Rugged Build, Night Vision, Durable</p>
+          <button>Buy Now</button>
+        </div>
+        <div class="watch-item">
+          <img src="https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=400&h=400&fit=crop" alt="Silver Heritage">
+          <h3>Silver Heritage</h3>
+          <p>Classic Design, Silver Finish, Timeless</p>
+          <button>Buy Now</button>
+        </div>
+        <div class="watch-item">
+          <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=400&h=400&fit=crop" alt="Carbon Racing">
+          <h3>Carbon Racing</h3>
+          <p>Racing Inspired, Speed Design, Bold</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <button class="arrow right" onclick="scrollCarousel('menCarousel', 1)">&#8594;</button>
     </div>
-    <!-- Add more watch cards -->
   </section>
+
+  <!-- Women's Watch Carousel (Scrolls Left) -->
+  <section class="carousel-section">
+    <h2>Women's Premium Collection</h2>
+    <div class="carousel-outer">
+      <button class="arrow left" onclick="scrollCarousel('womenCarousel', -1)">&#8592;</button>
+      <div class="carousel-container" id="womenCarousel">
+        <div class="watch-item">
+            <img src="https://images.unsplash.com/photo-1594534475808-b18fc6b6e5f7?w=400&h=400&fit=crop" alt="Rose Gold Elegance">
+            <h3>Rose Gold Elegance</h3>
+            <p>Rose Gold, Pearl Dial, Sophisticated</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="watch-item">
+            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400&h=400&fit=crop" alt="Diamond Princess">
+            <h3>Diamond Princess</h3>
+            <p>Diamond Bezel, White Gold, Luxury</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="watch-item">
+            <img src="https://images.unsplash.com/photo-1622434641406-a158123450f9?w=400&h=400&fit=crop" alt="Sapphire Dream">
+            <h3>Sapphire Dream</h3>
+            <p>Sapphire Crystal, Slim Design, Modern</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="watch-item">
+            <img src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=400&h=400&fit=crop" alt="Crystal Charm">
+            <h3>Crystal Charm</h3>
+            <p>Crystal Accents, Minimalist, Chic</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="watch-item">
+            <img src="https://images.unsplash.com/photo-1619801947440-c5e5c48a2e0d?w=400&h=400&fit=crop" alt="Pearl White">
+            <h3>Pearl White</h3>
+            <p>Mother of Pearl, Ceramic, Elegant</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="watch-item">
+            <img src="https://images.unsplash.com/photo-1566430363289-5dedc8a2e1b9?w=400&h=400&fit=crop" alt="Pink Blossom">
+            <h3>Pink Blossom</h3>
+            <p>Pink Dial, Floral Design, Feminine</p>
+            <button>Buy Now</button>
+        </div>
+      </div>
+      <button class="arrow right" onclick="scrollCarousel('womenCarousel', 1)">&#8594;</button>
+    </div>
+  </section>
+
   <section class="features">
-    <div>Authenticity Guaranteed</div>
-    <div>Global Shipping</div>
-    <div>Luxury Service</div>
+    <div class="feature-block">
+      <strong>Authenticity Guaranteed</strong>
+      <p>Certified genuine watches from leading global brands.</p>
+    </div>
+    <div class="feature-block">
+      <strong>Worldwide Shipping</strong>
+      <p>Delivered in secure packaging to 100+ countries.</p>
+    </div>
+    <div class="feature-block">
+      <strong>Luxury Warranty</strong>
+      <p>Comprehensive warranty included for all purchases.</p>
+    </div>
+    <div class="feature-block">
+      <strong>Exclusive Editions</strong>
+      <p>Handpicked limited and ultra-rare watches only.</p>
+    </div>
+    <div class="feature-block">
+      <strong>Secure Payments</strong>
+      <p>Protected payment gateway & buyer privacy respected.</p>
+    </div>
+  </section>
+  <section class="reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="review-item">"Unmatched quality and stunning design. Buying my Sapphire Elegance was a dream!"</div>
+    <div class="review-item">"Delivered fast, perfectly packed. Their collection is truly exclusive!"</div>
+    <div class="review-item">"The support team is extremely helpful. Love the Platinum Deluxe!"</div>
   </section>
   <footer>
-    <p>© 2025 Watcher Luxury. All rights reserved.</p>
-    <div class="social-links">
-      <!-- Add icons/links here -->
-    </div>
+    © 2025 Watcher Luxury. All rights reserved.<br>
+    Connect: Instagram | Facebook | Twitter | WhatsApp
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
